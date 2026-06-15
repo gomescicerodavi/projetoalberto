@@ -23,7 +23,7 @@ const team: TeamMember[] = [
     bio: "Responsável pela arquitetura, integração front-end e back-end, banco de dados e APIs.",
   },
   {
-    name: "Especialista em Acessibilidade",
+    name: "Especialista em Acessibilidade ",
     role: "Consultoria",
     avatar: "♿",
     bio: "Garante que todas as funcionalidades cumprem padrões WCAG e WAI-ARIA.",
