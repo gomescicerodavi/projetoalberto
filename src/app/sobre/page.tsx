@@ -11,22 +11,16 @@ interface TeamMember {
 
 const team: TeamMember[] = [
   {
-    name: "Desenvolvedor Front-End",
-    role: "Criação de Interface",
+    name: "Cícero Davi",
+    role: "Desenvolvedor Front-end",
     avatar: "🎨",
     bio: "Responsável pela criação da interface, experiência do usuário e componentes visuais acessíveis.",
   },
   {
-    name: "Desenvolvedor Full Stack",
-    role: "Arquitetura da Aplicação",
-    avatar: "⚙️",
-    bio: "Responsável pela arquitetura, integração front-end e back-end, banco de dados e APIs.",
-  },
-  {
-    name: "Especialista em Acessibilidade ",
-    role: "Consultoria",
-    avatar: "♿",
-    bio: "Garante que todas as funcionalidades cumprem padrões WCAG e WAI-ARIA.",
+    name: "Renan da Silva",
+    role: "Desenvolvedor Front-end",
+    avatar: "🎨",
+    bio: "Responsável pela criação da interface, experiência do usuário e componentes visuais acessíveis.",
   },
 ];
 
