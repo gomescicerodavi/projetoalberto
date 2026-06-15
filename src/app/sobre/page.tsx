@@ -92,12 +92,13 @@ export default function Sobre() {
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-12 text-center">
             Nossa Equipe
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {team.map((member) => (
-              <div
-                key={member.name}
-                className="p-8 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 text-center hover:shadow-lg transition-shadow"
-              >
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl w-full">
+              {team.map((member) => (
+                <div
+                  key={member.name}
+                  className="p-8 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 text-center hover:shadow-lg transition-shadow"
+                >
                 <div className="text-6xl mb-4">{member.avatar}</div>
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-1">
                   {member.name}
@@ -108,6 +109,7 @@ export default function Sobre() {
                 <p className="text-slate-600 dark:text-slate-400">{member.bio}</p>
               </div>
             ))}
+            </div>
           </div>
         </section>
 
@@ -119,13 +121,9 @@ export default function Sobre() {
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {[
               { name: "Next.js", icon: "⚡" },
-              { name: "React", icon: "⚛️" },
               { name: "TypeScript", icon: "📘" },
               { name: "Tailwind CSS", icon: "🎨" },
               { name: "Node.js", icon: "🟢" },
-              { name: "WAI-ARIA", icon: "♿" },
-              { name: "HTML5", icon: "🏗️" },
-              { name: "CSS3", icon: "🎨" },
             ].map((tech) => (
               <div
                 key={tech.name}
@@ -137,28 +135,6 @@ export default function Sobre() {
                 </p>
               </div>
             ))}
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="text-center bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl p-12 text-white">
-          <h3 className="text-3xl font-bold mb-4">
-            Quer fazer parte dessa missão?
-          </h3>
-          <p className="text-lg mb-8 opacity-90">
-            Contribua para tornar a internet acessível para todos
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="secondary" size="lg">
-              Contribuir
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-white text-white hover:bg-white/10"
-            >
-              Contato
-            </Button>
           </div>
         </section>
       </main>
